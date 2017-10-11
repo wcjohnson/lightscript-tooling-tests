@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`lint self 1`] = `
+exports[`react-prop-types-crash 1`] = `
 Object {
   "exitStatus": 1,
   "stderr": "",
