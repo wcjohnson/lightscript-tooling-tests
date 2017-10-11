@@ -1,0 +1,21 @@
+exec = require('child_process').exec
+
+export run(cmd) ->
+  new Promise! (resolve, reject) ->
+    exec! cmd, (err, stdout, stderr) ->
+      if err:
+        reject({err, stdout, stderr})
+      else:
+        resolve({stdout, stderr})
+
+export snapshot(expect, cmd) ->
+  run! cmd
+    .then! ({stdout, stderr}) ->
+      expect({stdout, stderr, succeeded: true, err: null}).toMatchSnapshot()
+    .catch! ({err, stdout, stderr}) ->
+      expect({stdout, stderr, succeeded: false, err}).toMatchSnapshot()
+
+export successfulSnapshot(expect, cmd) ->
+  run! cmd
+    .then! ({stdout, stderr}) ->
+      expect({stdout, stderr, succeeded: true, err: null}).toMatchSnapshot()

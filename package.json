@@ -1,0 +1,29 @@
+{
+  "name": "lightscript-tooling-tests",
+  "version": "3.0.0",
+  "private": true,
+  "description": "Test LightScript against common ecosystem tools",
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "build": "babel -x \".js\",\".lsc\" src --out-dir lib",
+    "test": "npm run build && jest"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@oigroup/babel-preset-lightscript": "3.0.0-alpha.6",
+    "@oigroup/lightscript-eslint": "3.0.0-alpha.6",
+    "babel-cli": "^6.26.0",
+    "jest": "^21.2.1",
+    "eslint": "^3.18.0",
+    "eslint-plugin-react": "^6.10.0"
+  },
+  "jest": {
+    "moduleFileExtensions": ["js", "jsx", "json", "lsc", "lsx"],
+    "transform": {
+      "^.+\\.(lsc|lsx)$": "<rootDir>/preprocessor.lsc.js"
+    },
+    "testRegex": "(\\.|/)test\\.(lsc|lsx)$"
+  }
+}

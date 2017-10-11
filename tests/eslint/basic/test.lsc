@@ -1,0 +1,4 @@
+import { snapshot } from '../../../lib/shell'
+
+test! "lint self", ->
+  expect~snapshot! "$(npm bin)/eslint tests/eslint/basic/lintThis.lsc"

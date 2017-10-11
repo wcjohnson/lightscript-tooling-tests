@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`lint self 1`] = `
+Object {
+  "err": [Error: Command failed: $(npm bin)/eslint tests/eslint/basic/lintThis.lsc
+],
+  "stderr": "",
+  "stdout": "
+/Users/wcj/dev/lightscript/lightscript-tooling-tests/tests/eslint/basic/lintThis.lsc
+  1:1  error  'x' is not defined  no-undef
+
+✖ 1 problem (1 error, 0 warnings)
+
+",
+  "succeeded": false,
+}
+`;

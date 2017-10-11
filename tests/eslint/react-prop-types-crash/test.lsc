@@ -1,0 +1,4 @@
+import { snapshot } from '../../../lib/shell'
+
+test! "lint self", ->
+  expect~snapshot! "$(npm bin)/eslint -c tests/eslint/react-prop-types-crash/linter-config.json tests/eslint/react-prop-types-crash/lintThis.lsc"
