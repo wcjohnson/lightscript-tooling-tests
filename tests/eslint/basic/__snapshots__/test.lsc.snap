@@ -2,8 +2,7 @@
 
 exports[`lint self 1`] = `
 Object {
-  "err": [Error: Command failed: $(npm bin)/eslint tests/eslint/basic/lintThis.lsc
-],
+  "exitStatus": 1,
   "stderr": "",
   "stdout": "
 /Users/wcj/dev/lightscript/lightscript-tooling-tests/tests/eslint/basic/lintThis.lsc

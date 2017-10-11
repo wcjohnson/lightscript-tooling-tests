@@ -11,11 +11,11 @@ export run(cmd) ->
 export snapshot(expect, cmd) ->
   run! cmd
     .then! ({stdout, stderr}) ->
-      expect({stdout, stderr, succeeded: true, err: null}).toMatchSnapshot()
+      expect({stdout, stderr, succeeded: true, exitStatus: 0}).toMatchSnapshot()
     .catch! ({err, stdout, stderr}) ->
-      expect({stdout, stderr, succeeded: false, err}).toMatchSnapshot()
+      expect({stdout, stderr, succeeded: false, exitStatus: err.code}).toMatchSnapshot()
 
 export successfulSnapshot(expect, cmd) ->
   run! cmd
     .then! ({stdout, stderr}) ->
-      expect({stdout, stderr, succeeded: true, err: null}).toMatchSnapshot()
+      expect({stdout, stderr, succeeded: true, exitStatus: 0}).toMatchSnapshot()

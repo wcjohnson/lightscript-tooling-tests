@@ -2,8 +2,7 @@
 
 exports[`lint self 1`] = `
 Object {
-  "err": [Error: Command failed: $(npm bin)/eslint -c tests/eslint/react-prop-types-crash/linter-config.json tests/eslint/react-prop-types-crash/lintThis.lsc
-],
+  "exitStatus": 1,
   "stderr": "",
   "stdout": "
 /Users/wcj/dev/lightscript/lightscript-tooling-tests/tests/eslint/react-prop-types-crash/lintThis.lsc
