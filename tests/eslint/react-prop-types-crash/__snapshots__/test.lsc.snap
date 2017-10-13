@@ -6,18 +6,24 @@ Object {
   "stderr": "",
   "stdout": "
 /Users/wcj/dev/lightscript/lightscript-tooling-tests/tests/eslint/react-prop-types-crash/lintThis.lsc
-   81:14  error  'children' is missing in props validation  react/prop-types
-   81:24  error  'section' is missing in props validation   react/prop-types
-   93:23  error  'section' is missing in props validation   react/prop-types
-   93:32  error  'id' is missing in props validation        react/prop-types
-   93:36  error  'children' is missing in props validation  react/prop-types
-  109:11  error  'code' is missing in props validation      react/prop-types
-  109:17  error  'syntax' is missing in props validation    react/prop-types
-  109:25  error  'width' is missing in props validation     react/prop-types
-  118:16  error  'lsc' is missing in props validation       react/prop-types
-  128:11  error  'code' is missing in props validation      react/prop-types
+   73:19  error  React.PropTypes is deprecated since React 15.5.0, use the npm module prop-types instead  react/no-deprecated
+   74:12  error  React.PropTypes is deprecated since React 15.5.0, use the npm module prop-types instead  react/no-deprecated
+   75:12  error  React.PropTypes is deprecated since React 15.5.0, use the npm module prop-types instead  react/no-deprecated
+   81:14  error  'children' is missing in props validation                                                react/prop-types
+   81:24  error  'section' is missing in props validation                                                 react/prop-types
+   90:19  error  React.PropTypes is deprecated since React 15.5.0, use the npm module prop-types instead  react/no-deprecated
+   93:23  error  'section' is missing in props validation                                                 react/prop-types
+   93:32  error  'id' is missing in props validation                                                      react/prop-types
+   93:36  error  'children' is missing in props validation                                                react/prop-types
+  105:12  error  React.PropTypes is deprecated since React 15.5.0, use the npm module prop-types instead  react/no-deprecated
+  106:12  error  React.PropTypes is deprecated since React 15.5.0, use the npm module prop-types instead  react/no-deprecated
+  109:11  error  'code' is missing in props validation                                                    react/prop-types
+  109:17  error  'syntax' is missing in props validation                                                  react/prop-types
+  109:25  error  'width' is missing in props validation                                                   react/prop-types
+  118:16  error  'lsc' is missing in props validation                                                     react/prop-types
+  128:11  error  'code' is missing in props validation                                                    react/prop-types
 
-✖ 10 problems (10 errors, 0 warnings)
+✖ 16 problems (16 errors, 0 warnings)
 
 ",
   "succeeded": false,
