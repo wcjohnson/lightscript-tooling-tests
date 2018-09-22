@@ -1,0 +1,6 @@
+import { api } from '@lightscript/babel-preset'
+import path from 'path'
+
+test! "decorators non-legacy", ->
+  config = api.tooling.getCompilerConfiguration(path.join(__dirname, __filename), '')
+  expect(config.getParserOptions().plugins.indexOf('decorators-legacy') >= 0).toBeFalsy()

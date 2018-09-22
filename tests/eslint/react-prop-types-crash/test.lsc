@@ -1,8 +1,0 @@
-import { snapshot } from '../../../lib/shell'
-path = require('path')
-
-let testName = __dirname.split(path.sep)
-now testName = testName[testName.length - 1]
-
-test! testName, ->
-  expect~snapshot! `$(npm bin)/eslint -c ${__dirname}/linter-config.json ${__dirname}/lintThis.lsc`

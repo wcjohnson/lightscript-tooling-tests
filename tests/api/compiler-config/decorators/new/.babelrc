@@ -3,6 +3,7 @@
     [
       "@lightscript",
       {
+        "decoratorOpts": { "decoratorsBeforeExport": false },
         "env": {
           "targets": {
             "ie": 10

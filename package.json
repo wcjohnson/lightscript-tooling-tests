@@ -1,24 +1,24 @@
 {
-  "name": "lightscript-tooling-tests",
-  "version": "3.0.0",
+  "name": "@lightscript/tooling-tests",
+  "version": "4.0.0",
   "private": true,
   "description": "Test LightScript against common ecosystem tools",
   "engines": {
-    "node": ">=4"
+    "node": ">=6"
   },
   "scripts": {
     "build": "babel -x \".js\",\".lsc\" src --out-dir lib",
-    "test": "npm run build && jest",
-    "preversion": "npm run test"
+    "test": "npm run build && jest"
   },
   "license": "MIT",
   "dependencies": {
-    "@oigroup/babel-preset-lightscript": "3.0.0-beta.1",
-    "@oigroup/lightscript-eslint": "3.0.0-beta.1",
-    "babel-cli": "^6.26.0",
-    "jest": "^21.2.1",
-    "eslint": "^4.8.0",
-    "eslint-plugin-react": "^7.4.0"
+    "@lightscript/babel-preset": "4.0.0-alpha.3",
+    "@lightscript/eslint-plugin": "4.0.0-alpha.4",
+    "@babel/core": "^7.1.0",
+    "@babel/cli": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "jest": "^23.6.0",
+    "eslint": "^5.6.0"
   },
   "jest": {
     "moduleFileExtensions": ["js", "jsx", "json", "lsc", "lsx"],
