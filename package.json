@@ -8,7 +8,8 @@
   },
   "scripts": {
     "build": "babel -x \".js\",\".lsc\" src --out-dir lib",
-    "test": "npm run build && jest"
+    "test": "npm run build && jest",
+    "test:only": "jest"
   },
   "license": "MIT",
   "dependencies": {
