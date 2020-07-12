@@ -13,13 +13,14 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@lightscript/babel-preset": "4.0.0-alpha.13",
-    "@lightscript/eslint-plugin": "4.0.0-alpha.13",
+    "@lightscript/babel-preset": "4.0.0-alpha.25",
+    "@lightscript/eslint-plugin": "4.0.0-alpha.25",
     "@babel/core": "^7.1.0",
     "@babel/cli": "^7.1.0",
     "@babel/preset-env": "^7.1.0",
     "jest": "^23.6.0",
-    "eslint": "^5.6.0"
+    "eslint": "^5.6.0",
+    "quotemeta": "^0.0.0"
   },
   "jest": {
     "moduleFileExtensions": ["js", "jsx", "json", "lsc", "lsx"],
