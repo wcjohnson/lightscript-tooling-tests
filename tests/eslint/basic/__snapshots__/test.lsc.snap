@@ -5,7 +5,7 @@ Object {
   "exitStatus": 1,
   "stderr": "",
   "stdout": "
-/Users/wcj/dev/lightscript/lightscript-tooling-tests/tests/eslint/basic/lintThis.lsc
+/tests/eslint/basic/lintThis.lsc
   1:1  error  'x' is not defined  no-undef
 
 ✖ 1 problem (1 error, 0 warnings)

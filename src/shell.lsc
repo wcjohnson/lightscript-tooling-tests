@@ -1,4 +1,9 @@
 exec = require('child_process').exec
+quotemeta = require('quotemeta')
+path = require('path')
+
+basePath = path.resolve(__dirname, '..')
+basePathRe = new RegExp(quotemeta(basePath), 'g')
 
 export run(cmd) ->
   new Promise! (resolve, reject) ->
@@ -11,8 +16,12 @@ export run(cmd) ->
 export snapshot(expect, cmd) ->
   run! cmd
     .then! ({stdout, stderr}) ->
+      now stdout = stdout.replace(basePathRe, "")
+      now stderr = stderr.replace(basePathRe, "")
       expect({stdout, stderr, succeeded: true, exitStatus: 0}).toMatchSnapshot()
     .catch! ({err, stdout, stderr}) ->
+      now stdout = stdout.replace(basePathRe, "")
+      now stderr = stderr.replace(basePathRe, "")
       expect({stdout, stderr, succeeded: false, exitStatus: err.code}).toMatchSnapshot()
 
 export successfulSnapshot(expect, cmd) ->
